@@ -1,4 +1,5 @@
-javascript
-==========
+<h2>Readme</h2>
 
-javascript
+1: $git clone https://github.com/ealexseen/javascript.git
+
+<p>https://github.com/ealexseen/javascript.git</p>
