@@ -1,0 +1,54 @@
+@import "compass/css3";
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
+
+$OpenSans: 'Open Sans', sans-serif;
+
+@mixin fontOpenSans($weight, $size){
+  font-family: $OpenSans;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+.shell{
+  text-align: center;
+}
+
+.unitObject{
+  display: inline-block;
+  font-size: 0;
+  border: 1px solid #000;
+}
+
+.unitObject__list{
+  display: inline-block;
+  padding: 10px;
+  @include box-sizing(border-box);
+  border-left: 1px solid #000;
+  cursor: pointer;
+  &:first-child{
+    border-left: none;
+  }
+  &:hover{
+    background: #000;
+    span{
+      color: #fff;
+    }
+  }
+  span{
+    display: block;
+    @include fontOpenSans(normal, 18px);
+    color: #000;
+  }
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 900px;
+}
+
+.unitText{
+  @include fontOpenSans(normal, 14px);
+  color:  #000;
+  padding: 15px;
+  line-height: 20px;
+}

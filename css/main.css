@@ -1,0 +1,275 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.my-flex-container {
+  display: flex;
+}
+
+.table {
+  display: block;
+  width: 900px;
+  border: 1px solid #000;
+}
+.table thead {
+  color: #fff;
+  background-color: #000;
+}
+.table tbody, .table thead {
+  display: block;
+}
+.table tbody tr, .table thead tr {
+  display: block;
+  border-top: 1px solid #000;
+  padding: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+}
+.table tbody th, .table tbody td, .table thead th, .table thead td {
+  display: inline-block;
+  width: 25%;
+  font-size: 14px;
+}
+.table tbody {
+  max-height: 300px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.timer {
+  display: none;
+}
+
+.bg-1 {
+  background-color: #000;
+}
+
+.title {
+  font: bold 100px Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 150px;
+}
+
+#displayTimers {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0;
+}
+#displayTimers span {
+  display: inline-block;
+  padding: 10px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: bold 220px Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+#displayTimers span:first-child {
+  margin-left: 0;
+}
+
+.Video {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -1;
+}
+.Video .VideoMain {
+  height: 100%;
+}
+.Video .VideoMain video {
+  width: 100%;
+}
+
+.VideoBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-image: url("../images/dots.png");
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#iframeGame {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  -moz-box-shadow: 0 0 90px #000;
+  -webkit-box-shadow: 0 0 90px #000;
+  box-shadow: 0 0 90px #000;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.menu__audio {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.menu__audio > span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font: bold 10px Arial, sans-serif;
+  text-align: center;
+  line-height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.menu__audio > span:hover {
+  color: #000;
+}
+.menu__audio > span:hover span {
+  position: relative;
+  z-index: 1;
+  color: #000;
+}
+.menu__audio > span.active {
+  color: #000;
+  background: rgba(255, 255, 255, 0.7);
+}
+.menu__audio > span i {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.shell {
+  text-align: center;
+}
+
+.unitObject {
+  display: inline-block;
+  font-size: 0;
+  border: 1px solid #000;
+}
+
+.unitObject__list {
+  display: inline-block;
+  padding: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left: 1px solid #000;
+  cursor: pointer;
+}
+.unitObject__list:first-child {
+  border-left: none;
+}
+.unitObject__list:hover {
+  background: #000;
+}
+.unitObject__list:hover span {
+  color: #fff;
+}
+.unitObject__list span {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.unitText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000;
+  padding: 15px;
+  line-height: 20px;
+}
