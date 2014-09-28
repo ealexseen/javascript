@@ -2,7 +2,7 @@ window.onload = function(){
 
     var canvas = document.getElementById('radius');
     var context = canvas.getContext('2d');
-    var radius = 60;
+    var radius = 80;
 
     var WH = function(){
         canvas.width = window.innerWidth;
