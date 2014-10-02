@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/form.js"></script>
     <link rel="stylesheet" href="css/interface/radius.css" type="text/css">
     <title>Radius app canvas</title>
 </head>
 <body>
+<div class="formBar">Форма отправки</div>
+<div class="formWrapper">
     <form class="form">
-        <input type="text" name="name">
-        <input type="text" name="email">
-        <textarea type="text" name="text"></textarea>
-        <input type="button" class="button" value="send">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email" placeholder="e-mail">
+        <textarea type="text" name="text" placeholder="messege"></textarea>
+        <input type="submit" class="button" value="send">
     </form>
+</div>
 </body>
 </html>

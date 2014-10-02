@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -103,7 +104,7 @@ body {
 
 .left, .center, .right {
   display: inline-block;
-  width: 30%;
+  width: 33%;
   vertical-align: top;
 }
 
@@ -169,12 +170,66 @@ body {
 .form {
   display: inline-block;
   width: 400px;
+  margin-top: 70px;
 }
 .form input {
   display: inline-block;
   width: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  outline: none;
+  margin: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .form textarea {
   display: inline-block;
   width: 100%;
+  padding: 5px;
+  height: 100px;
+  border: 1px solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.formWrapper {
+  text-align: center;
+}
+
+.formBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40px;
+  background: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
 }
