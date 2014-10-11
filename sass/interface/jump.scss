@@ -1,0 +1,11 @@
+@import "compass/css3";
+@import "../vars";
+
+.jump{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 130px;
+  height: 130px;
+  background: #000;
+}

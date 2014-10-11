@@ -1,13 +1,5 @@
 @import "compass/css3";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
-
-$OpenSans: 'Open Sans', sans-serif;
-
-@mixin fontOpenSans($weight, $size){
-  font-family: $OpenSans;
-  font-weight: $weight;
-  font-size: $size;
-}
+@import "../vars";
 
 .shell{
   text-align: center;

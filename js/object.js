@@ -82,10 +82,43 @@ $(function(){
         name: 1
     };
 
-    console.log(array);
-
     array = undefined;
 
-    console.log(array);
+
+    var obj = { outerWidth: 20 };
+
+    function getWidth(){
+        console.log(this);
+        return this.outerWidth;
+    }
+
+    /*var a = getWidth();
+    var b = getWidth.apply(obj);
+    var c = new getWidth();
+
+    c.publicFunction = function(){
+        return this.outerWidth;
+    }
+
+    function A(){
+        console.log(this);
+        return this.outerWidth;
+    }*/
+
+
+    var a = '1';
+    var b = 1;
+    var c = false;
+    var d = null;
+    var e = undefined;
+    var f = NaN;
+
+
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    console.log(typeof d);
+    console.log(typeof e);
+    console.log(typeof f);
 
 });

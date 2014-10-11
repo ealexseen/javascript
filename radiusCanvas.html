@@ -3,13 +3,34 @@
     <head>
         <meta charset="utf-8">
         <script src="js/jquery.js"></script>
-        <script src="js/radius.js"></script>
         <link rel="stylesheet" href="css/interface/radius.css" type="text/css">
         <title>Radius app canvas</title>
     </head>
     <body>
+        <div class="toolbar">
+            <div class="left">
+                <div class="rad">
+                    Radius <span id="radval">10</span>
+                    <div id="decrad" class="radcontroll">-</div>
+                    <div id="incrad" class="radcontroll">+</div>
+                </div>
+            </div>
+            <div class="center">
+                <div id="save">
+                    <iframe id="downloadframe" hidden="yes"></iframe>
+                    save
+                </div>
+            </div>
+            <div class="right">
+                <ul id="colors"></ul>
+            </div>
+        </div>
         <canvas id="radius">
             В вашем браузере не поддерживается canvas, просим заменить ваш браузер на более современный.
         </canvas>
+        <script type="text/javascript" src="js/radius/radius.js"></script>
+        <script type="text/javascript" src="js/radius/radiusButton.js"></script>
+        <script type="text/javascript" src="js/radius/colors.js"></script>
+        <script type="text/javascript" src="js/radius/save.js"></script>
     </body>
 </html>
