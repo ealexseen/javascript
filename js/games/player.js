@@ -6,7 +6,6 @@ var Player = function(){
     this.drawY = 0;
     this.width = 55;
     this.height = 34;
-    this.speed = 5;
 
     /* key */
     this.isUp = false;
@@ -14,6 +13,9 @@ var Player = function(){
     this.isRight = false;
     this.isLeft = false;
     /* end key */
+
+    this.speed = 5;
+    this.hp = 100;
 }
 
 var Enemy = function(){
@@ -24,6 +26,15 @@ var Enemy = function(){
     this.width = 55;
     this.height = 34;
 
-    this.speed = 15;
+    this.speed = 1,
+    this.hp = 100;
 }
 /* end object */
+
+var Bullet = function(x,y){
+    this.drawX = x;
+    this.drawY = y;
+    this.radius = 30;
+    this.speed = 10;
+    this.damage = 50;
+}
